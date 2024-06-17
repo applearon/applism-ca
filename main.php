@@ -1,12 +1,10 @@
 <h1><?php print($l18n['home']['title'][$lang]);?></h1>
-<p><?php print($l18n['home']['info'][$lang]);?></p>
 <div class="card">
-  <h2>Header</h2>
-  <img title="<?php print($l18n['home']['header'][$lang])?>" alt="<?php print($l18n['home']['header'][$lang])?>" src="/assets/PurpleApple.png"></img>
+  <h2>New Beginnings Tournament</h2>
+  <img title="<?php print($l18n['home']['banner'][$lang])?>" alt="<?php print($l18n['home']['banner'][$lang])?>" src="/assets/NBT_Banner.png"></img>
   <div class="inner-card">
     <p class="text">
-      <?php print($l18n['home']['headerinfo'][$lang]) ?>
+      <?php print($l18n['home']['nbt_info'][$lang]) ?>
     </p>
-    <a href="https://applism.ca" class="button">Button!!!</a>
   </div>
 </div>

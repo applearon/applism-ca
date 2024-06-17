@@ -16,10 +16,10 @@ function isActive($page) {
 <html lang="<?php print($lang)?>">
     <head>
         <!-- SEO Stuff -->
-       <meta property="og:title" content="Applearon's Things" />
-        <meta property="og:description" content="The offical™ site for Applearon's Stuff." />
-        <meta property="og:url" content="https://applism.ca" />
-        <meta property="og:site_name" content="Applearon's Things" />
+       <meta property="og:title" content="Applearon's osu! things" />
+        <meta property="og:description" content="One of the websites of all time" />
+        <meta property="og:url" content="https://osu.applism.ca" />
+        <meta property="og:site_name" content="Applearon's osu! things />
         <meta property="og:image" content="/assets/PurpleApple.png" />
         <meta name="theme-color" content="#920089">  	
   
@@ -38,7 +38,7 @@ function isActive($page) {
     <body>
     <div class="topnav">
         <a class="<?php isActive("/");?>" href="/"><?php print($l18n['menu']['home'][$lang])?></a>
-        <a class="<?php isActive("/projects/");?>" href="#"><?php print($l18n['menu']['two'][$lang])?></a>
+        <a class="<?php isActive("/NBT/");?>" href="#"><?php print($l18n['menu']['NBT'][$lang])?></a>
         <div class="langstuff">
             <button class="lang-btn"><?php print($lang_pretty[$lang])?></button>
             <div class="langs">
