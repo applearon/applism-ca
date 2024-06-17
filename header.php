@@ -7,7 +7,7 @@ if(!strpos("en fr", $lang)) {
 };
 
 function isActive($page) {
-    if ($page == $_SERVER['REQUEST_URI']) {
+    if ($page == parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH)) {
         print("active");
     };
 }
