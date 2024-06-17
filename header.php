@@ -1,7 +1,7 @@
 <?php
 // Set variables and such
 $tmp = explode('.', $_SERVER['HTTP_HOST']); // lang based on prefix (fr.applism.ca en.applism.ca etc)
-$lang = array_shift($tmp);
+$lang = $_GET['lang'];
 if(!strpos("en fr", $lang)) {
     $lang = "en";
 };
@@ -37,13 +37,13 @@ function isActive($page) {
     </head>
     <body>
     <div class="topnav">
-        <a class="<?php isActive("/");?>" href="/"><?php print($l18n['menu']['home'][$lang])?></a>
+        <a class="<?php isActive("/");?>" href="/?lang=<?php print($lang)?>"><?php print($l18n['menu']['home'][$lang])?></a>
         <a class="<?php isActive("/NBT/");?>" href="#"><?php print($l18n['menu']['NBT'][$lang])?></a>
         <div class="langstuff">
             <button class="lang-btn"><?php print($lang_pretty[$lang])?></button>
             <div class="langs">
-                <a href="#">English</a>
-                <a href="#">Français</a>
+                <a href="?lang=en">English</a>
+                <a href="?lang=fr">Français</a>
             </div>
         </div>
     </div> 
